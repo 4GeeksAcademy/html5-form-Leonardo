@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HTML5 Form</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="header">
+        <h2>Payment Form Example</h2>
+      </div>
+      <form action="">
+        <div class="form">
+          <div>
+            <p class="missing"><strong>Some Fields Are Missing</strong></p>
+          </div>
+          <div class="card-info row">
+            <div class="col-5">
+              <fieldset>
+                <legend>Card #</legend>
+                <input
+                  type="text"
+                  placeholder="xxxxxxxxxxxxxxxx"
+                  class="card-input"
+                />
+              </fieldset>
+            </div>
+            <div class="col-3">
+              <fieldset>
+                <legend>CVC #</legend>
+                <input type="text" placeholder="0000" class="card-input" />
+              </fieldset>
+            </div>
+            <div class="col-4">
+              <fieldset>
+                <legend>Amount</legend>
+                <input type="text" placeholder="$ Amount" class="card-input" />
+              </fieldset>
+            </div>
+          </div>
+          <div class="info row">
+            <div class="col-6 name-info">
+              <fieldset>
+                <legend>First Name</legend>
+                <input type="text" />
+              </fieldset>
+              <fieldset>
+                <legend>City</legend>
+                <input type="text" />
+              </fieldset>
+              <fieldset>
+                <legend>We accept:</legend>
+                <div class="cards-info">
+                  <input
+                    type="radio"
+                    value="cards"
+                    id="mc"
+                    class="card-type-input"
+                  />
+                  <label for="mc"
+                    ><i class="fa-brands fa-cc-mastercard"></i
+                  ></label>
+                  <input
+                    type="radio"
+                    value="cards"
+                    id="visa"
+                    class="card-type-input"
+                  />
+                  <label for="visa"><i class="fa-brands fa-cc-visa"></i></label>
+                  <input
+                    type="radio"
+                    value="cards"
+                    id="o"
+                    class="card-type-input"
+                  />
+                  <label for="o"
+                    ><i class="fa-brands fa-cc-diners-club"></i
+                  ></label>
+                  <input
+                    type="radio"
+                    value="cards"
+                    id="a-e"
+                    class="card-type-input"
+                  />
+                  <label for="a-e"><i class="fa-brands fa-cc-amex"></i></label>
+                </div>
+              </fieldset>
+            </div>
+            <div class="col-6 address-info">
+              <fieldset>
+                <legend>Last Name</legend>
+                <input type="text" />
+              </fieldset>
+              <div class="row">
+                <div class="col-5 state">
+                  <fieldset>
+                    <legend>State</legend>
+                    <input type="text" placeholder="Pick a state" />
+                  </fieldset>
+                </div>
+                <div class="col-5 postal-code">
+                  <fieldset>
+                    <legend>Postal Code</legend>
+                    <input type="text" />
+                  </fieldset>
+                </div>
+              </div>
+              <fieldset>
+                <legend>Message</legend>
+                <textarea rows="5" cols="80"> </textarea>
+                <p>Add any notes here.</p>
+              </fieldset>
+            </div>
+          </div>
+          <div class="footer">
+            <button type="button" class="btn btn-secondary">Cancel</button>
+            <button type="button" class="btn btn-primary">Send</button>
+          </div>
+        </div>
+      </form>
+    </div>
+
+    <script
+      src="https://kit.fontawesome.com/bc35145626.js"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

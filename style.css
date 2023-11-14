@@ -1,0 +1,54 @@
+.container{
+    border: solid 1px #DFDFDF;
+}
+
+.header{
+    background-color: #F7F7F7;
+    border: solid 1px #DFDFDF;
+    padding: 10px;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+input,
+textarea {
+    width: 100%;   
+    padding: 10px;
+    border: solid 1px #DFDFDF;
+    border-radius: 5px;
+}
+
+.missing{
+    background-color: #F8D7DA;
+    color: #7C2A31;
+    padding: 10px;
+    width: 100%;
+    border: solid 1px #F5C9CD;
+    border-radius: 5px;
+}
+
+
+.cards-info{
+    background-color: grey;
+    padding: 10px;
+    width: 40%;
+    border-radius: 5px;
+}
+
+.card-type-input{
+    width: 20px;
+}
+
+
+.state{
+    margin-right: 5px;
+}
+
+.footer{
+    position: relative;
+    left: 85%;
+}
+
+.btn-secondary{
+    margin-right: 20px;
+}
