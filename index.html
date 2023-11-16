@@ -13,7 +13,7 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <div class="container">
+    <div class="main-content">
       <div class="header">
         <h2>Payment Form Example</h2>
       </div>
@@ -27,22 +27,35 @@
               <fieldset>
                 <legend>Card #</legend>
                 <input
-                  type="text"
-                  placeholder="xxxxxxxxxxxxxxxx"
+                  type="tel"
+                  placeholder="XXXX XXXX XXXX XXXX"
                   class="card-input"
+                  required
+                  maxlength="16"
                 />
               </fieldset>
             </div>
             <div class="col-3">
               <fieldset>
                 <legend>CVC #</legend>
-                <input type="text" placeholder="0000" class="card-input" />
+                <input
+                  type="tel"
+                  placeholder="0000"
+                  class="card-input"
+                  required
+                  maxlength="4"
+                />
               </fieldset>
             </div>
             <div class="col-4">
               <fieldset>
                 <legend>Amount</legend>
-                <input type="text" placeholder="$ Amount" class="card-input" />
+                <input
+                  type="tel"
+                  placeholder="$ Amount"
+                  class="card-input"
+                  required
+                />
               </fieldset>
             </div>
           </div>
@@ -50,11 +63,11 @@
             <div class="col-6 name-info">
               <fieldset>
                 <legend>First Name</legend>
-                <input type="text" />
+                <input type="text" required />
               </fieldset>
               <fieldset>
                 <legend>City</legend>
-                <input type="text" />
+                <input type="text" required />
               </fieldset>
               <fieldset>
                 <legend>We accept:</legend>
@@ -64,6 +77,7 @@
                     value="cards"
                     id="mc"
                     class="card-type-input"
+                    name="choice"
                   />
                   <label for="mc"
                     ><i class="fa-brands fa-cc-mastercard"></i
@@ -73,6 +87,7 @@
                     value="cards"
                     id="visa"
                     class="card-type-input"
+                    name="choice"
                   />
                   <label for="visa"><i class="fa-brands fa-cc-visa"></i></label>
                   <input
@@ -80,6 +95,7 @@
                     value="cards"
                     id="o"
                     class="card-type-input"
+                    name="choice"
                   />
                   <label for="o"
                     ><i class="fa-brands fa-cc-diners-club"></i
@@ -89,6 +105,7 @@
                     value="cards"
                     id="a-e"
                     class="card-type-input"
+                    name="choice"
                   />
                   <label for="a-e"><i class="fa-brands fa-cc-amex"></i></label>
                 </div>
@@ -97,19 +114,19 @@
             <div class="col-6 address-info">
               <fieldset>
                 <legend>Last Name</legend>
-                <input type="text" />
+                <input type="text" required />
               </fieldset>
               <div class="row">
-                <div class="col-5 state">
+                <div class="col-lg-5 col-md-12 state">
                   <fieldset>
                     <legend>State</legend>
-                    <input type="text" placeholder="Pick a state" />
+                    <input type="text" placeholder="Pick a state" required />
                   </fieldset>
                 </div>
-                <div class="col-5 postal-code">
+                <div class="col-lg-5 col-md-12 postal-code">
                   <fieldset>
                     <legend>Postal Code</legend>
-                    <input type="text" />
+                    <input type="tel" required maxlength="5" />
                   </fieldset>
                 </div>
               </div>
@@ -121,8 +138,8 @@
             </div>
           </div>
           <div class="footer">
-            <button type="button" class="btn btn-secondary">Cancel</button>
-            <button type="button" class="btn btn-primary">Send</button>
+            <button type="submit" class="btn btn-secondary">Cancel</button>
+            <button type="submit" class="btn btn-primary">Send</button>
           </div>
         </div>
       </form>
